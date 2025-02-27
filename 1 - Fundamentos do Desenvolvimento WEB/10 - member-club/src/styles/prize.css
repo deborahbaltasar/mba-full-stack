@@ -1,0 +1,37 @@
+#prize-container {
+  width: 100dvw;
+  height: 100dvh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+
+  > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--base-gray-100);
+    border: 1px solid var(--base-gray-300);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto auto;
+
+    h2 {
+      font: var(--heading-title-md);
+      color: var(--base-gray-600);
+    }
+
+    p {
+      font: var(--heading-title-sm);
+      color: var(--base-gray-500);
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 50%;
+    }
+  }
+}
+
+.invisible {
+  display: none !important;
+}

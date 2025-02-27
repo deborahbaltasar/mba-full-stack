@@ -1,0 +1,105 @@
+#loyalty-card-container {
+  display: flex;
+  align-items: center;
+  background-color: var(--base-gray-100);
+  border: 1px solid var(--base-gray-300);
+  padding: 20px;
+  border-radius: 10px;
+  gap: 20px;
+  flex-direction: column;
+  grid-area: loyalty;
+
+  @media screen and (min-width: 768px) {
+    gap: 32px;
+  }
+
+  #loyalty-title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start;
+    gap: 16px;
+
+    > div {
+      flex: 1;
+    }
+
+    h2 {
+      font: var(--heading-subtitle-sm);
+      color: var(--base-gray-500);
+      text-transform: uppercase;
+    }
+
+    p {
+      font: var(--body-text-sm);
+      color: var(--base-gray-500);
+    }
+
+    span {
+      font: var(--heading-subtitle-sm);
+      color: var(--base-gray-500);
+      text-transform: uppercase;
+      padding: 3.5px 8px;
+      background-color: var(--base-gray-300);
+      border-radius: 999px;
+
+      @media screen and (min-width: 768px) {
+        font: var(--heading-subtitle-md);
+        padding: 6px 12px;
+      }
+    }
+  }
+
+  #stamp-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+      gap: 1rem;
+    }
+
+    > div {
+      aspect-ratio: 1 / 1;
+      background-color: var(--base-gray-200);
+      border-radius: 13px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 45%;
+        height: 45%;
+        object-fit: contain;
+
+        @media screen and (min-width: 768px) {
+          width: 60%;
+          height: 60%;
+        }
+      }
+
+      i {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::before {
+          color: var(--base-gray-500);
+          font-size: 5vw;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        @media screen and (min-width: 768px) {
+          &::before {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
+}

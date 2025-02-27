@@ -1,0 +1,39 @@
+#user-info-container {
+  display: flex;
+  align-items: center;
+  background-color: var(--base-gray-100);
+  border: 1px solid var(--base-gray-300);
+  padding: 16px;
+  border-radius: 10px;
+  gap: 16px;
+  grid-area: info;
+
+  img {
+    width: 56px;
+    height: 56px;
+    border-radius: 10px;
+    background: conic-gradient(
+      from 315deg,
+      rgba(214, 88, 179, 1) 0%,
+      rgba(175, 116, 222, 1) 13%,
+      rgba(107, 132, 222, 1) 25%,
+      rgba(93, 202, 183, 1) 38%,
+      rgba(69, 180, 66, 1) 50%,
+      rgba(94, 198, 185, 1) 62%,
+      rgba(105, 141, 217, 1) 73%,
+      rgba(120, 135, 218, 1) 76%,
+      rgba(214, 88, 179, 1) 100%
+    );
+    padding: 2px;
+  }
+
+  h2 {
+    font: var(--heading-title-sm);
+    color: var(--base-gray-600);
+  }
+
+  p {
+    font: var(--body-text-xs);
+    color: var(--base-gray-500);
+  }
+}

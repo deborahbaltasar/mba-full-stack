@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="prize-container" class="invisible">
+      <div id="prize-content">
+        <h2>Prêmio</h2>
+        <p>
+          Parabéns! Seu próximo corte é gratuito!” caso o cliente tenha atingido
+          os 10 cortes
+        </p>
+      </div>
+    </section>
+    <main>
+      <img src="./src/assets/images/Logo.png" alt="logo" id="logo" />
+      <form id="search-input-container">
+        <input
+          type="text"
+          placeholder="ID do cartão"
+          name="user-id"
+          id="user-id"
+        />
+        <button type="submit">
+          <i class="ph ph-arrow-elbow-down-left"></i>
+        </button>
+      </form>
+      <div id="main-content">
+        <section id="user-info-container">
+          <!-- <img src="./src/assets/images/Profile.png" alt="imagem do usuario" />
+          <div>
+            <h2>Natália Miranda</h2>
+            <p>Cliente desde 18/09/2023</p>
+          </div> -->
+        </section>
+
+        <section id="loyalty-card-container">
+          <div id="loyalty-title">
+            <div>
+              <h2>Cartão fidelidade</h2>
+              <p>Ao fazer cortes de cabelo, o décimo sai de graça!</p>
+            </div>
+
+            <span id="user-id-container"></span>
+          </div>
+
+          <div id="stamp-container">
+            <!-- <div>
+              <img src="./src/assets/images/PinCheck.png" alt="pin check" />
+            </div>
+            <div>
+              <img src="./src/assets/images/PinCheck.png" alt="pin check" />
+            </div>
+            <div>
+              <img src="./src/assets/images/PinCheck.png" alt="pin check" />
+            </div>
+            <div>
+              <img src="./src/assets/images/PinCheck.png" alt="pin check" />
+            </div>
+            <div>
+              <img src="./src/assets/images/PinCheck.png" alt="pin check" />
+            </div>
+            <div>
+              <img src="./src/assets/images/PinCheck.png" alt="pin check" />
+            </div>
+            <div>
+              <img src="./src/assets/images/PinCheck.png" alt="pin check" />
+            </div>
+            <div></div>
+            <div></div>
+            <div>
+              <i class="ph-fill ph-gift"></i>
+            </div> -->
+          </div>
+        </section>
+
+        <section id="counter-container">
+          <div id="counter-info">
+            <h2 id="counter-title">
+              <!-- <strong>3</strong> cortes restantes -->
+            </h2>
+            <div id="progress-bar-container">
+              <!-- <progress id="progress-bar" value="32" max="100"></progress>
+              <label for="progress-bar">7 de 10</label> -->
+            </div>
+          </div>
+          <div id="gift-icon">
+            <img src="./src/assets/images/PinGift.png" alt="" />
+          </div>
+        </section>
+
+        <section id="history-container">
+          <div id="history-title">
+            <h2>Histórico</h2>
+            <span id="total-cuts">
+              <!-- 7 cortes -->
+            </span>
+          </div>
+          <div id="history-list">
+            <!-- <div class="history-item">
+              <div>
+                <h3>18/09/2023</h3>
+                <p>18:30</p>
+              </div>
+              <span class="history-item-seal">
+                <i class="ph ph-seal-check"></i>
+              </span>
+            </div> -->
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
